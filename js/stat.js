@@ -65,6 +65,8 @@ window.renderStatistics = function(ctx, players, times) {
   ctx.fillText('Список результатов:', CLOUD_X + 20, CLOUD_Y + 20 + FONT_HEIGHT + 5);
 
   for (var i = 0; i < players.length; i++) {
+    ctx.fillStyle = '#000'
+    ctx.fillText(Math.round(times[i]), CLOUD_X + BAR_WIDTH + (BAR_WIDTH + BAR_GAP) * i, (CLOUD_HEIGHT + CLOUD_Y) - BAR_WIDTH - (barHeight * times[i] / maxTime) - 20);
     if (players[i] == 'Вы') {
       ctx.fillStyle = 'rgba(255, 0, 0, 1)';
     }
