@@ -78,4 +78,3 @@ window.renderStatistics = function(ctx, players, times) {
     ctx.fillRect(CLOUD_X + BAR_WIDTH + (BAR_WIDTH + BAR_GAP) * i, CLOUD_HEIGHT + CLOUD_Y - BAR_WIDTH, BAR_WIDTH, (barHeight * times[i] / maxTime) * -1);
   }
 };
-
